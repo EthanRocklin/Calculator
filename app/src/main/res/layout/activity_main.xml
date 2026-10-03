@@ -7,13 +7,178 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Display for the calculations -->
+
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/result_tv"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Hello World"
+        android:textAlignment="textEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Layout for the buttons -->
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        app:layout_constraintTop_toBottomOf="@+id/result_tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Row 1 Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_c"
+            style="@style/GridButton"
+            android:backgroundTint="#337dff"
+            android:text="C"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_left_p"
+            style="@style/GridButton"
+            android:backgroundTint="#595959"
+            android:text="("
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_right_p"
+            style="@style/GridButton"
+            android:backgroundTint="#595959"
+            android:text=")"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_divide"
+            style="@style/GridButton"
+            android:backgroundTint="#ff9f17"
+            android:text="@string/division"
+            app:cornerRadius="100dp" />
+
+        <!-- Row 2 Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_7"
+            style="@style/GridButton"
+            android:backgroundTint="#595959"
+            android:text="7"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_8"
+            style="@style/GridButton"
+            android:backgroundTint="#595959"
+            android:text="8"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_9"
+            style="@style/GridButton"
+            android:backgroundTint="#595959"
+            android:text="9"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_multiply"
+            style="@style/GridButton"
+            android:backgroundTint="#ff9f17"
+            android:text="@string/multiply"
+            app:cornerRadius="100dp" />
+
+        <!-- Row 3 Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_4"
+            style="@style/GridButton"
+            android:backgroundTint="#595959"
+            android:text="4"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_5"
+            style="@style/GridButton"
+            android:backgroundTint="#595959"
+            android:text="5"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_6"
+            style="@style/GridButton"
+            android:backgroundTint="#595959"
+            android:text="6"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_subtract"
+            style="@style/GridButton"
+            android:backgroundTint="#ff9f17"
+            android:text="-"
+            app:cornerRadius="100dp" />
+
+        <!-- Row 4 Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_1"
+            style="@style/GridButton"
+            android:backgroundTint="#595959"
+            android:text="1"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_2"
+            style="@style/GridButton"
+            android:backgroundTint="#595959"
+            android:text="2"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_3"
+            style="@style/GridButton"
+            android:backgroundTint="#595959"
+            android:text="3"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_add"
+            style="@style/GridButton"
+            android:backgroundTint="#ff9f17"
+            android:text="+"
+            app:cornerRadius="30dp" />
+
+        <!-- Row 5 Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_ac"
+            style="@style/GridButton"
+            android:backgroundTint="#FF3377"
+            android:text="AC"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_0"
+            style="@style/GridButton"
+            android:backgroundTint="#595959"
+            android:text="0"
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_decimal"
+            style="@style/GridButton"
+            android:backgroundTint="#595959"
+            android:text="."
+            app:cornerRadius="100dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_equal"
+            style="@style/GridButton"
+            android:backgroundTint="#ff9f17"
+            android:text="="
+            app:cornerRadius="100dp" />
+
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
