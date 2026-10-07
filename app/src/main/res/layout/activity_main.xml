@@ -62,6 +62,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/c_button"
             android:text="C"
+            android:onClick="clear"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -69,6 +70,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text="("
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -76,6 +78,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text=")"
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -83,6 +86,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/op_button"
             android:text="@string/division"
+            android:onClick="appendDiv"
             app:cornerRadius="30dp" />
 
         <!-- Row 2 Buttons -->
@@ -91,6 +95,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text="7"
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -98,6 +103,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text="8"
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -105,6 +111,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text="9"
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -112,6 +119,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/op_button"
             android:text="@string/multiply"
+            android:onClick="appendMulti"
             app:cornerRadius="30dp" />
 
         <!-- Row 3 Buttons -->
@@ -120,6 +128,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text="4"
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -127,6 +136,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text="5"
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -134,6 +144,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text="6"
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -141,6 +152,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/op_button"
             android:text="-"
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <!-- Row 4 Buttons -->
@@ -149,6 +161,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text="1"
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -156,6 +169,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text="2"
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -163,6 +177,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text="3"
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -170,6 +185,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/op_button"
             android:text="+"
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <!-- Row 5 Buttons -->
@@ -179,6 +195,7 @@
             android:backgroundTint="@color/ac_button"
             android:text="AC"
             android:textSize="32sp"
+            android:onClick="clearAll"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -186,6 +203,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text="0"
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -193,6 +211,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text="."
+            android:onClick="appendCalc"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -200,6 +219,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/op_button"
             android:text="="
+            android:onClick="calculateResult"
             app:cornerRadius="30dp" />
 
     </GridLayout>
