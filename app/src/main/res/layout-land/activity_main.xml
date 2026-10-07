@@ -17,9 +17,9 @@
         android:layout_margin="16dp"
         android:layout_marginEnd="16dp"
         android:text="ID : 41307936"
-        android:textSize="36sp"
+        android:textSize="28sp"
         android:textColor="#ffa22f"
-        android:gravity="center|end"
+        android:gravity="bottom|end"
         app:layout_constraintHeight_percent="0.15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:text="Ethan Rocklin"
-        android:textSize="50sp"
+        android:textSize="36sp"
         android:textColor="#ffa22f"
         android:gravity="bottom|end"
         app:layout_constraintHeight_percent="0.2"
@@ -72,7 +72,7 @@
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonRP"
+            android:id="@+id/button_RP"
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
             android:text=")"
