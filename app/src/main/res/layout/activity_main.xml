@@ -16,7 +16,7 @@
         android:layout_height="0dp"
         android:layout_margin="16dp"
         android:layout_marginEnd="16dp"
-        android:text="ID : 41307936"
+        android:text="@string/student_id"
         android:textSize="36sp"
         android:textColor="#ffa22f"
         android:gravity="center|end"
@@ -31,7 +31,7 @@
         android:layout_height="0dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:text="Ethan Rocklin"
+        android:text="@string/last_name"
         android:textSize="50sp"
         android:textColor="#ffa22f"
         android:gravity="bottom|end"
@@ -61,7 +61,7 @@
             android:id="@+id/buttonC"
             style="@style/GridButton"
             android:backgroundTint="@color/c_button"
-            android:text="C"
+            android:text="@string/C"
             android:onClick="clear"
             app:cornerRadius="30dp" />
 
@@ -69,16 +69,16 @@
             android:id="@+id/buttonLP"
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
-            android:text="("
-            android:onClick="appendCalc"
+            android:text="@string/opening_p"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonRP"
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
-            android:text=")"
-            android:onClick="appendCalc"
+            android:text="@string/closing_p"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -94,24 +94,24 @@
             android:id="@+id/button7"
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
-            android:text="7"
-            android:onClick="appendCalc"
+            android:text="@string/_7"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button8"
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
-            android:text="8"
-            android:onClick="appendCalc"
+            android:text="@string/_8"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button9"
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
-            android:text="9"
-            android:onClick="appendCalc"
+            android:text="@string/_9"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
@@ -127,32 +127,32 @@
             android:id="@+id/button4"
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
-            android:text="4"
-            android:onClick="appendCalc"
+            android:text="@string/_4"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button5"
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
-            android:text="5"
-            android:onClick="appendCalc"
+            android:text="@string/_5"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button6"
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
-            android:text="6"
-            android:onClick="appendCalc"
+            android:text="@string/_6"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonMinus"
             style="@style/GridButton"
             android:backgroundTint="@color/op_button"
-            android:text="-"
-            android:onClick="appendCalc"
+            android:text="@string/minus"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <!-- Row 4 Buttons -->
@@ -160,32 +160,32 @@
             android:id="@+id/button1"
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
-            android:text="1"
-            android:onClick="appendCalc"
+            android:text="@string/_1"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
-            android:text="2"
-            android:onClick="appendCalc"
+            android:text="@string/_2"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button3"
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
-            android:text="3"
-            android:onClick="appendCalc"
+            android:text="@string/_3"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonPlus"
             style="@style/GridButton"
             android:backgroundTint="@color/op_button"
-            android:text="+"
-            android:onClick="appendCalc"
+            android:text="@string/plus"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <!-- Row 5 Buttons -->
@@ -193,7 +193,7 @@
             android:id="@+id/buttonAC"
             style="@style/GridButton"
             android:backgroundTint="@color/ac_button"
-            android:text="AC"
+            android:text="@string/ac"
             android:textSize="32sp"
             android:onClick="clearAll"
             app:cornerRadius="30dp" />
@@ -201,24 +201,24 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button0"
             style="@style/GridButton"
-            android:backgroundTint="@color/num_button"
-            android:text="0"
-            android:onClick="appendCalc"
+            android:backgroundTint="@color/zero_button"
+            android:text="@string/_0"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDecimal"
             style="@style/GridButton"
             android:backgroundTint="@color/num_button"
-            android:text="."
-            android:onClick="appendCalc"
+            android:text="@string/decimal"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonEqual"
             style="@style/GridButton"
             android:backgroundTint="@color/op_button"
-            android:text="="
+            android:text="@string/equals"
             android:onClick="calculateResult"
             app:cornerRadius="30dp" />
 

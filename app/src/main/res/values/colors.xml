@@ -4,6 +4,7 @@
     <color name="black">#FF000000</color>
     <color name="c_button">#337DFF</color>
     <color name="num_button">#595959</color>
-    <color name="white">#FFFFFFFF</color>
     <color name="op_button">#FF9F17</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="zero_button">#FF8033</color>
 </resources>
