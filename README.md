@@ -13,7 +13,6 @@ The following images are examples of what the application looks like, calculatio
 different orientations or on different devices.
 
 <img width="754" height="1615" alt="calculator_home_icon" src="https://github.com/user-attachments/assets/62005826-86b2-4404-860e-944a25a30c2d" />
-
 <img width="745" height="1620" alt="calculator_intialization" src="https://github.com/user-attachments/assets/819f1652-4ed5-423d-bc0a-390a53a00db1" />
 <img width="742" height="1615" alt="calculator_calc1" src="https://github.com/user-attachments/assets/47c19cd9-85e5-4b54-bbc4-a1b43a92b977" />
 <img width="745" height="1608" alt="calculator_calc2" src="https://github.com/user-attachments/assets/f07dd6f4-1fb8-4226-8c0a-4d4da47c987d" />
