@@ -19,8 +19,8 @@ import org.mozilla.javascript.Scriptable;
 /**
  * This class contains all necessary variables and methods for running
  * the calculator, including Rhino integration and updating the UI.
+ * @author Ethan Rocklin
  */
-
 public class MainActivity extends AppCompatActivity {
 
     private static final Logger logger = Logger.getLogger(MainActivity.class.getName());
@@ -106,7 +106,8 @@ public class MainActivity extends AppCompatActivity {
         try {
             if (!expressionTV.toString().isEmpty()) {
                 dataToCalculate = dataToCalculate.substring(0, dataToCalculate.length() - 1);
-                expressionTV.setText(dataToCalculate);
+                String displayedText = expressionTV.getText().toString();
+                expressionTV.setText(displayedText.substring(0, displayedText.length() - 1));
             }
         } catch (Exception e) {
             logger.log(Level.INFO, "EXPECTED EXCEPTION: Clear button pressed with nothing to clear.");
@@ -152,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
         int decimalIndex = num.length();
         if (num.contains(".")) {
             decimalIndex = num.indexOf(".");
-            decimalPart = num.substring(decimalIndex, num.length() - 1);
+            decimalPart = num.substring(decimalIndex);
         } else {
             wholePart = num;
         }
@@ -160,16 +161,27 @@ public class MainActivity extends AppCompatActivity {
         wholePart = new StringBuilder(num.substring(0, decimalIndex))
                 .reverse()
                 .toString();
+        // Temporarily removes the negative from wholePart
+        boolean isNegative = false;
+        int lastIndex = wholePart.length() - 1;
+        if (wholePart.charAt(lastIndex) == '-') {
+            isNegative = true;
+            wholePart = wholePart.substring(0, lastIndex);
+        }
         // Scans wholePart and inserts a comma every three digits.
         StringBuilder result = new StringBuilder();
-        // If there is not a decimal
-        for (int i = 0; i < num.length(); i++) {
+        lastIndex = wholePart.length() - 1;
+        for (int i = 0; i < wholePart.length(); i++) {
             result.append(wholePart.charAt(i));
-            if ((i + 1) % 3 == 0 && i != num.length() - 1) {
+            // if the
+            if ((i + 1) % 3 == 0 && i != lastIndex) {
                 result.append(",");
             }
         }
         // Restores the original order of the result
+        if (isNegative) {
+            result.append("-");
+        }
         result.reverse().append(decimalPart);
         return result.toString();
     }

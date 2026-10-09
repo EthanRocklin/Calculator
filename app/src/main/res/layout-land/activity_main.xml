@@ -14,13 +14,12 @@
         android:id="@+id/expressionTV"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="ID : 41307936"
-        android:textSize="28sp"
-        android:textColor="#ffa22f"
+        android:text="@string/student_id"
+        android:textSize="24sp"
+        android:textColor="@color/expr_display"
         android:gravity="bottom|end"
-        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintWidth_percent="0.78"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -29,13 +28,12 @@
         android:id="@+id/resultTV"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Ethan Rocklin"
-        android:textSize="36sp"
-        android:textColor="#ffa22f"
+        android:text="@string/last_name"
+        android:textSize="32sp"
+        android:textColor="@color/result"
         android:gravity="bottom|end"
-        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintWidth_percent="0.78"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/expressionTV" />
@@ -51,7 +49,8 @@
         android:columnCount="4"
         android:rowCount="5"
         app:layout_constraintTop_toBottomOf="@+id/resultTV"
-        app:layout_constraintHeight_percent="0.60"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintWidth_percent="0.8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -59,147 +58,169 @@
         <!-- Row 1 Buttons -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonC"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/c_button"
-            android:text="C"
+            android:text="@string/C"
+            android:onClick="clear"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonLP"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/num_button"
-            android:text="("
+            android:text="@string/opening_p"
+            android:textSize="24sp"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_RP"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/num_button"
-            android:text=")"
+            android:text="@string/closing_p"
+            android:textSize="24sp"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDivide"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/op_button"
             android:text="@string/division"
+            android:onClick="appendDiv"
             app:cornerRadius="30dp" />
 
         <!-- Row 2 Buttons -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button7"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/num_button"
-            android:text="7"
+            android:text="@string/_7"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button8"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/num_button"
-            android:text="8"
+            android:text="@string/_8"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button9"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/num_button"
-            android:text="9"
+            android:text="@string/_9"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonMultiply"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/op_button"
             android:text="@string/multiply"
+            android:onClick="appendMulti"
             app:cornerRadius="30dp" />
 
         <!-- Row 3 Buttons -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button4"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/num_button"
-            android:text="4"
+            android:text="@string/_4"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button5"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/num_button"
-            android:text="5"
+            android:text="@string/_5"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button6"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/num_button"
-            android:text="6"
+            android:text="@string/_6"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonMinus"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/op_button"
-            android:text="-"
+            android:text="@string/minus"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <!-- Row 4 Buttons -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button1"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/num_button"
-            android:text="1"
+            android:text="@string/_1"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/num_button"
-            android:text="2"
+            android:text="@string/_2"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button3"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/num_button"
-            android:text="3"
+            android:text="@string/_3"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonPlus"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/op_button"
-            android:text="+"
+            android:text="@string/plus"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <!-- Row 5 Buttons -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonAC"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/ac_button"
-            android:text="AC"
-            android:textSize="32sp"
+            android:text="@string/ac"
+            android:textSize="26sp"
+            android:onClick="clearAll"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button0"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/num_button"
-            android:text="0"
+            android:text="@string/_0"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDecimal"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/num_button"
-            android:text="."
+            android:text="@string/decimal"
+            android:onClick="appendExpr"
             app:cornerRadius="30dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonEqual"
-            style="@style/GridButton"
+            style="@style/GridButtonLandscape"
             android:backgroundTint="@color/op_button"
-            android:text="="
+            android:text="@string/equals"
+            android:onClick="calculateResult"
             app:cornerRadius="30dp" />
 
     </GridLayout>

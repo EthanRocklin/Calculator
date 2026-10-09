@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="ac_button">#FF3377</color>
+    <color name="app_icon_bacground">#FF6620</color>
     <color name="black">#FF000000</color>
     <color name="c_button">#337DFF</color>
+    <color name="expr_display">#FFE6A1</color>
     <color name="num_button">#595959</color>
     <color name="op_button">#FF9F17</color>
+    <color name="result">#FFA22F</color>
     <color name="white">#FFFFFFFF</color>
     <color name="zero_button">#FF8033</color>
 </resources>
