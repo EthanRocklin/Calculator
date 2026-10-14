@@ -2,11 +2,11 @@ This README provides an overview of the calculator application, including its fu
 
 This application was built for CS 460, Software Engineering for Mobile Devices, at Central Washington University. 
 It was developed in Android Studio Panda 4 (API level 26) using Java and XML. It includes basic arithmetic operations and 
-scales well with several types of devices. To start, press AC to clear initial display requirements.
+scales well with several types of devices.
 
 You can perform basic operations, such as addition, subtraction, multiplication, and division. Grouping operations to change
 precedence is possible with the parentheses buttons. When you have typed the desired expression, press the ENTER ("=") button
-to compute the result. Press C to clear the most recent character in the expression, and press AC (clear all) to reset the 
+to save the result and update the expression. Press C to clear the most recent character in the expression, and press AC (clear all) to reset the 
 expression.
 
 The following images are examples of what the application looks like, calculation examples, and the application running in 
