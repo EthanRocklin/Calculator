@@ -16,7 +16,6 @@
         android:layout_height="0dp"
         android:layout_margin="12dp"
         android:layout_marginEnd="12dp"
-        android:text="@string/student_id"
         android:textSize="30sp"
         android:textColor="@color/expr_display"
         android:gravity="center|end"
@@ -31,7 +30,6 @@
         android:layout_height="0dp"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
-        android:text="@string/last_name"
         android:textSize="42sp"
         android:textColor="@color/result"
         android:gravity="bottom|end"
@@ -222,7 +220,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/op_button"
             android:text="@string/equals"
-            android:onClick="calculateResult"
+            android:onClick="equals"
             app:cornerRadius="30dp" />
 
     </GridLayout>

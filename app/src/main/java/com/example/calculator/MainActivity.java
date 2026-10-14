@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         MaterialButton btn = (MaterialButton) view;
         dataToCalculate += btn.getText().toString();
         expressionTV.append(btn.getText().toString());
+        calculateResult(view);
     }
 
     /**
@@ -141,24 +142,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * This method updates the expression display to the result of the expression.
+     * @param view The UI element that triggered the method call.
+     */
+    public void equals(View view) {
+        dataToCalculate = String.valueOf(resultTV.getText());
+        expressionTV.setText(resultTV.getText());
+    }
+
+    /**
      * This method takes the result of an arithmetic evaluation and inserts
      * commas to distinguish place values.
      * @param num A String representing the result of an arithmetic evaluation
      * @return A String representing the result with place-value commas
      */
     private String insertCommas(String num) {
-        String wholePart = "";
         String decimalPart = "";
         // Splits the result into its whole and decimal parts
         int decimalIndex = num.length();
         if (num.contains(".")) {
             decimalIndex = num.indexOf(".");
             decimalPart = num.substring(decimalIndex);
-        } else {
-            wholePart = num;
         }
         // Reverses the order of digits for easier processing
-        wholePart = new StringBuilder(num.substring(0, decimalIndex))
+        String wholePart = new StringBuilder(num.substring(0, decimalIndex))
                 .reverse()
                 .toString();
         // Temporarily removes the negative from wholePart

@@ -14,7 +14,6 @@
         android:id="@+id/expressionTV"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/student_id"
         android:textSize="24sp"
         android:textColor="@color/expr_display"
         android:gravity="bottom|end"
@@ -28,7 +27,6 @@
         android:id="@+id/resultTV"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/last_name"
         android:textSize="32sp"
         android:textColor="@color/result"
         android:gravity="bottom|end"
@@ -220,7 +218,7 @@
             style="@style/GridButtonLandscape"
             android:backgroundTint="@color/op_button"
             android:text="@string/equals"
-            android:onClick="calculateResult"
+            android:onClick="equals"
             app:cornerRadius="30dp" />
 
     </GridLayout>
