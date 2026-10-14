@@ -195,7 +195,7 @@
             style="@style/GridButton"
             android:backgroundTint="@color/ac_button"
             android:text="@string/ac"
-            android:textSize="32sp"
+            android:textSize="30sp"
             android:onClick="clearAll"
             app:cornerRadius="30dp" />
 
